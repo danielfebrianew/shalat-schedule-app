@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:jadwal_sholat/model/user_model.dart';
-import 'package:jadwal_sholat/navbar.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:jadwal_sholat/page/login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Poppins',
       ),
-      home: const Navbar(),
+      home: const Login(),
     );
   }
 }
